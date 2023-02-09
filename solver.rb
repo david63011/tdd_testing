@@ -1,8 +1,8 @@
 class Solver
   def factorial(num)
-    if num < 0
+    if num.negative?
       'Error'
-    elsif num == 0
+    elsif num.zero?
       1
     else
       num * factorial(num - 1)
@@ -14,11 +14,11 @@ class Solver
   end
 
   def fizzbuzz(num)
-    if num % 3 == 0 && num % 5 == 0
+    if (num % 3).zero? && (num % 5).zero?
       'FizzBuzz'
-    elsif num % 3 == 0
+    elsif (num % 3).zero?
       'Fizz'
-    elsif num % 5 == 0
+    elsif (num % 5).zero?
       'Buzz'
     else
       num.to_s
