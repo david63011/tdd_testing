@@ -8,4 +8,7 @@ class Solver
           return num * factorial(num - 1) 
         end
     end
+    def reverse (word)
+        word.is_a?(String) ? word.reverse : "Enter a string"
+    end
 end
