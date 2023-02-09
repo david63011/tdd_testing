@@ -15,4 +15,36 @@ before(:each) do
                 expect(@solver.factorial(-1)).to eq "Error"
                 end
           end
+          context "test the reserve method" do
+            it "should return the reversed string" do
+              expect(@solver.reverse("hello")).to eq "olleh"
+            end
+          end
+          to  Everyone
+          def fizzbuzz (num)
+                  if num % 3 == 0 && num % 5 == 0
+                      return "FizzBuzz"
+                  elsif num % 3 == 0
+                      return "Fizz"
+                  elsif num % 5 == 0
+                      return "Buzz"
+                  else
+                      return num.to_s
+                  end
+              end
+          context 'testing fizzbuzz' do
+                      it 'should return fizz when the number is divisible by 3' do
+                          expect(@solver.fizzbuzz(3)).to eq "fizz"
+                      end
+                      it 'should return buzz when the number is divisible by 5' do
+                          expect(@solver.fizzbuzz(5)).to eq "buzz"
+                      end
+                      it 'should return fizzbuzz when the number is divisible by 3 and 5' do
+                          expect(@solver.fizzbuzz(15)).to eq "fizzbuzz"
+                      end
+                      it 'should return the number when the number is not divisible by 3 or 5' do
+                          expect(@solver.fizzbuzz(2)).to eq '2'
+                      end
+                  end
+
     end
