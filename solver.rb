@@ -13,15 +13,15 @@ class Solver
     word.is_a?(String) ? word.reverse : 'Enter a string'
   end
 
-  def fizzbuzz (num)
+  def fizzbuzz(num)
     if num % 3 == 0 && num % 5 == 0
-        return "FizzBuzz"
+      'FizzBuzz'
     elsif num % 3 == 0
-        return "Fizz"
+      'Fizz'
     elsif num % 5 == 0
-        return "Buzz"
+      'Buzz'
     else
-        return num.to_s
+      num.to_s
     end
   end
 end
