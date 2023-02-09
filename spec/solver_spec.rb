@@ -15,4 +15,10 @@ describe Solver do
       expect(@solver.factorial(-1)).to eq "Error"
     end
   end
+
+  context "test the reserve method" do
+    it "should return the reversed string" do
+      expect(@solver.reverse("hello")).to eq "olleh"
+    end
+  end
 end
