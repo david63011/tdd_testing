@@ -1,12 +1,11 @@
 require_relative '../solver'
 
 describe Solver do
-    describe Solver do
-        before(:each) do
+before(:each) do
           @solver = Solver.new
         end
         context 'Test of the factorial method' do
-            it 'should return 2 when the given argument is 2' do
+            it 'should return 1 when the given argument is 0' do
               expect(@solver.factorial(0)).to eq 1
             end
         it 'should return 24 when the given argument is 4' do
